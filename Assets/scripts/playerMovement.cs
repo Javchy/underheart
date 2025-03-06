@@ -7,9 +7,9 @@ public class playerMovement : MonoBehaviour
     public float maxSpeed = 10f; 
     public float groundCheckDistance = 0.3f; // Distance du raycast pour vérifier si le joueur est au sol
     public LayerMask groundLayer; // Couche des sols (pour vérifier si le joueur est au sol)
-    
-   
 
+
+    public float sprintspeed;
     private Rigidbody2D rb;
     private bool isGrounded;
 

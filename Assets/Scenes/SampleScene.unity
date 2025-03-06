@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73390654}
   - component: {fileID: 73390653}
+  - component: {fileID: 73390655}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -172,8 +173,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.0534, y: 1.57495, z: 0}
-    m_Extent: {x: 4.4589, y: 3.71685, z: 0}
+    m_Center: {x: 3.354, y: 0.17680001, z: 0}
+    m_Extent: {x: 3.8277001, y: 3.4852, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -184,13 +185,11 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.7254348, y: -0.18439174, z: 0}
-  - {x: 6.522446, y: -1.6427505, z: 0}
-  - {x: 6.834518, y: -0.64999723, z: 0}
-  - {x: 7.0148654, y: 1.4690865, z: 0}
-  - {x: 6.6767135, y: 3.272562, z: 0}
-  - {x: 6.0947185, y: 4.7917385, z: 0}
-  - {x: -0.90578175, y: 0.61271715, z: 0}
+  - {x: 0.035888433, y: -0.11859822, z: 0}
+  - {x: 6.681519, y: -2.8092873, z: 0}
+  - {x: 6.638218, y: 3.1612394, z: 0}
+  - {x: 0.0717206, y: 0.44353414, z: 0}
+  - {x: 0.024842262, y: 0.059901714, z: 0}
 --- !u!4 &73390654
 Transform:
   m_ObjectHideFlags: 0
@@ -200,12 +199,25 @@ Transform:
   m_GameObject: {fileID: 73390652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7169695, y: -0.17922425, z: 0}
+  m_LocalPosition: {x: 0.144, y: -0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1827272865}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73390655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73390652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47c478bb6b0b6346a6d45bfc0c25328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCam: {fileID: 519420031}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +325,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.67
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
