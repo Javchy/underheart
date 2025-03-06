@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class ennemie : MonoBehaviour
 {
-    public Transform player;  // Référence au joueur
-    public float vitesse = 5f;  // Vitesse de déplacement de l'objet
+    public Transform player;  
+    public float vitesse = 5f;  
     public float delaiCalcul = 0.5f;  // Délai avant de recalculer la direction (en secondes)
 
-    private float timer = 0f;  // Timer pour suivre le délai
-    private Vector2 direction;  // Direction actuelle vers le joueur
-
+    private float timer = 0f; 
+    private Vector2 direction;  
+    public Transform centreObjet; 
+    public float rayonMaximale = 5f;
     void Update()
     {
+
         if (player != null)
         {
             // Incrémenter le timer à chaque frame
@@ -28,6 +30,22 @@ public class ennemie : MonoBehaviour
 
             // Déplacer l'objet vers le joueur en suivant la direction calculée
             transform.position = Vector2.MoveTowards(transform.position, (Vector2)player.position, vitesse * Time.deltaTime);
+        }
+
+
+        if (centreObjet != null)
+        {
+            // Calculer la direction et la distance entre l'ennemi et le centre
+            Vector3 direction = transform.position - centreObjet.position;
+            float distance = direction.magnitude;
+
+            // Si l'ennemi dépasse le rayon maximal
+            if (distance > rayonMaximale)
+            {
+                // Normaliser la direction pour déplacer l'ennemi jusqu'à la limite du rayon
+                Vector3 directionNormalisee = direction.normalized;
+                transform.position = centreObjet.position + directionNormalisee * rayonMaximale;
+            }
         }
     }
 
