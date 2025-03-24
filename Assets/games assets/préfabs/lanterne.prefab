@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 734747958179952775}
   - component: {fileID: 9092444531575696687}
   - component: {fileID: 3774747141691525325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lanterne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 2957679013064811757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99.293846, y: 6.484, z: 0.43}
+  m_LocalPosition: {x: -91.84, y: 4.727, z: 0.43}
   m_LocalScale: {x: 5.5343, y: 5.5343, z: 5.5343}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -239,7 +239,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &2992352888687776595
 GameObject:
   m_ObjectHideFlags: 0
