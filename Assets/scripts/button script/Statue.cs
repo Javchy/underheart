@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class Statue : MonoBehaviour
+
+public class statue : MonoBehaviour
 {
-    private Animator _animator;
 
+    private Animator _animator;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
