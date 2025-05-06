@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class camera_manager : MonoBehaviour
@@ -11,5 +12,8 @@ public class camera_manager : MonoBehaviour
     {
         Vector3 newPos = new Vector3(target.position.x, target.position.y + 1, yOffset - 10f);
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+
+  
     }
+  
 }
