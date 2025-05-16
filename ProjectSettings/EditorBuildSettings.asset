@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/menu d\xE9marrage.unity"
     guid: 255106c76401901468cbd5def91ca7d8
   - enabled: 1
-    path: Assets/Scenes/Forest.unity
+    path: Assets/Scenes/start forest.unity
     guid: 00b2800855f544543bbf17c09f761507
   - enabled: 1
     path: Assets/Scenes/cave.unity
