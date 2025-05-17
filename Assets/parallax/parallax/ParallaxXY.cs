@@ -37,6 +37,6 @@ public class ParallaxXY : MonoBehaviour
     public void SetParallaxActive(bool active)
     {
         parallaxActive = active;
-        lastCameraPosition = cameraTransform.position; // reset pour éviter un gros saut
+        lastCameraPosition = cameraTransform.position; 
     }
 }

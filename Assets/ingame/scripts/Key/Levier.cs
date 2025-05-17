@@ -11,10 +11,10 @@ public class Levier : MonoBehaviour
 
     void Start()
     {
-        // Cherche une Light2D dans les enfants du levier
+       
         leverLight = GetComponentInChildren<UnityEngine.Rendering.Universal.Light2D>();
         if (leverLight != null)
-            leverLight.enabled = false; // �teinte au d�but
+            leverLight.enabled = false;
     }
 
     void Update()
