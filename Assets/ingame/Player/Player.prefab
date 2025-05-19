@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1600944786214808404}
   - component: {fileID: 443122066989266994}
   - component: {fileID: 4035859978416824155}
+  - component: {fileID: -4453520298936510470}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -154,7 +155,6 @@ MonoBehaviour:
   keyCount: 0
   keysNeeded: 5
   door: {fileID: 0}
-  Key: {fileID: 0}
   keyUI: {fileID: 0}
 --- !u!70 &4035859978416824155
 CapsuleCollider2D:
@@ -193,6 +193,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!95 &-4453520298936510470
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302582358740892633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54e3b214b6c5e044dbd3d9f9bea06ac9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5484071832560610911
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,5 +343,4 @@ MonoBehaviour:
   keyCount: 0
   keysNeeded: 5
   door: {fileID: 0}
-  Key: {fileID: 0}
   keyUI: {fileID: 0}

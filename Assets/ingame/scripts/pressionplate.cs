@@ -5,7 +5,6 @@ public class pressionplate : MonoBehaviour
 {
     private Animator _animator;
 
-
     [SerializeField]
     private UnityEvent _collisionEntered;
 
@@ -19,11 +18,15 @@ public class pressionplate : MonoBehaviour
     {
         _animator.SetTrigger("activate");
     }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
-        
-        
-            _collisionEntered? .Invoke();
-        
+        _collisionEntered?.Invoke();
+    }
+
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        _animator.SetTrigger("not activate");
     }
 }
+

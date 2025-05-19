@@ -3,7 +3,7 @@ using UnityEngine.Rendering.Universal; // Pour Light2D
 
 public class key_controller : MonoBehaviour
 {
-    public Light2D targetLight; // 💡 Lumière à allumer quand on ramasse la clé
+    public Light2D targetLight;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class key_controller : MonoBehaviour
 
             if (targetLight != null)
             {
-                targetLight.enabled = true; // 💡 Allume la lumière !
+                targetLight.enabled = true;
             }
 
             Destroy(gameObject); // Supprime la clé ramassée
