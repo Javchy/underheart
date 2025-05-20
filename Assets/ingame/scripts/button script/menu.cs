@@ -19,6 +19,6 @@ public class Menu : MonoBehaviour
     private IEnumerator LoadSceneAfterDelay()
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene("cave");
+        SceneManager.LoadScene("start forest");
     }
 }
