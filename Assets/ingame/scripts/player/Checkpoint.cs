@@ -4,7 +4,12 @@ public class Checkpoint : MonoBehaviour
 {
     private bool isActivated = false;
     private bool playerInRange = false;
+    audioManagerr audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<audioManagerr>();
+    }
     private void Update()
     {
         
@@ -16,6 +21,7 @@ public class Checkpoint : MonoBehaviour
 
     private void ActivateCheckpoint()
     {
+        audioManager.Playsfx(audioManager.checkpoint);
         Debug.Log("Checkpoint activé !");
         isActivated = true;
         RespawnManager.instance.SetCheckpoint(transform.position);

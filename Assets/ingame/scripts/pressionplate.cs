@@ -24,9 +24,6 @@ public class pressionplate : MonoBehaviour
         _collisionEntered?.Invoke();
     }
 
-    private void OnCollisionExit2D(Collision2D col)
-    {
-        _animator.SetTrigger("not activate");
-    }
+ 
 }
 

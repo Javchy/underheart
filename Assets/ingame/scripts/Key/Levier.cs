@@ -8,7 +8,12 @@ public class Levier : MonoBehaviour
 
     private bool isActivated = false;
     private bool playerInRange = false;
+    audioManagerr audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<audioManagerr>();
+    }
     void Start()
     {
        
@@ -27,6 +32,7 @@ public class Levier : MonoBehaviour
 
     void ActivateLevier()
     {
+        audioManager.Playsfx(audioManager.lever);
         isActivated = true;
 
         if (leverLight != null)

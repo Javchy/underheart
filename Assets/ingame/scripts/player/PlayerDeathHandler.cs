@@ -4,7 +4,11 @@ using System.Collections;
 public class PlayerDeathHandler : MonoBehaviour
 {
     public float respawnDelay = 1.5f;
-
+    audioManagerr audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<audioManagerr>();
+    }
     public void Die()
     {
         StartCoroutine(DieRoutine());
@@ -13,6 +17,7 @@ public class PlayerDeathHandler : MonoBehaviour
     private IEnumerator DieRoutine()
     {
         Debug.Log("Début de DieRoutine");
+        audioManager.Playsfx(audioManager.death);
 
         // Désactivation temporaire du visuel et des collisions
         GetComponent<SpriteRenderer>().enabled = false;
