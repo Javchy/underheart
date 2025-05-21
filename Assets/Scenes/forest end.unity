@@ -3126,6 +3126,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: shadows_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4486233297413253457, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: 'dialogueLines.Array.data[0]'
+      value: 'sorry kid,
+
+        I had to do it...
+
+        you will be happier
+        now.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754985124857116923, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_text
+      value: "sorry kid, \nI had to do it"
+      objectReference: {fileID: 0}
     - target: {fileID: 7852560100843493452, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 97.68

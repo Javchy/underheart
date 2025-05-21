@@ -3394,9 +3394,64 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1971319279615644716, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6633333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971319279615644716, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6633333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971319279615644716, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6633333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971319279615644716, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564012867927246230, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776870788005524045, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_text
+      value: press E to interact
+      objectReference: {fileID: 0}
     - target: {fileID: 3729275580878019326, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
       propertyPath: m_Name
       value: shadows_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486233297413253457, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486233297413253457, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: 'dialogueLines.Array.data[0]'
+      value: 'sorry kid, wrong way
+
+        pay attention, the cave is not a safe
+        place for someone your age'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486233297413253457, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: 'dialogueLines.Array.data[1]'
+      value: pay attention, the cave is not a safe place for someone your age
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566168000042700360, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.001732855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566168000042700360, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.001732855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566168000042700360, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.001732855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566168000042700360, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.31115
       objectReference: {fileID: 0}
     - target: {fileID: 7852560100843493452, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
       propertyPath: m_LocalPosition.x
