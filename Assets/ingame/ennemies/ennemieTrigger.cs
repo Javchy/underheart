@@ -9,13 +9,18 @@ public class ennemieTrigger : MonoBehaviour
     public string[] dialogueLines;
 
     private bool playerInRange;
-
-    private void Update()
+    audioManagerr audioManager;
+    private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<audioManagerr>();
+    }
+    private void Update()
+    {  
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
+        { audioManager.Playsfx(audioManager.interaction);
             dialogueUI.StartDialogue(dialogueLines, portraitSprite);
         }
+     
     }
 
     private void OnTriggerEnter2D(Collider2D other)

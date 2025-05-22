@@ -14,6 +14,7 @@ public class audioManagerr : MonoBehaviour
     public AudioClip lever;
     public AudioClip tp;
     public AudioClip interaction;
+    public AudioClip ambulance;
     private void Start()
     {
         musicsource.clip = background; 

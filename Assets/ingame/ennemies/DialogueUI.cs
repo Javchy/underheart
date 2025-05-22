@@ -15,11 +15,7 @@ public class DialogueUI : MonoBehaviour
     private bool isTyping;
     private bool isDialogueOpen;
 
-    audioManagerr audioManager;
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<audioManagerr>();
-    }
+   
 
 
     void Start()
@@ -33,7 +29,7 @@ public class DialogueUI : MonoBehaviour
     public void StartDialogue(string[] dialogueLines, Sprite portrait)
     {
 
-        audioManager.Playsfx(audioManager.interaction);
+       
         // Toggle OFF si déjà ouvert
         if (isDialogueOpen)
         {
