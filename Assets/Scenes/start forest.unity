@@ -2509,6 +2509,7 @@ MonoBehaviour:
   lever: {fileID: 0}
   tp: {fileID: 0}
   interaction: {fileID: 8300000, guid: 6b8e4374409fc6c4aab5731958ec02c2, type: 3}
+  ambulance: {fileID: 0}
 --- !u!4 &1599647155
 Transform:
   m_ObjectHideFlags: 0
@@ -3698,7 +3699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1972712781}
-  parallaxEffect: 0
+  parallaxEffect: 0.1
 --- !u!1001 &1383898004307380042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3768,7 +3769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7852560100843493452, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.85
+      value: -32
       objectReference: {fileID: 0}
     - target: {fileID: 7852560100843493452, guid: 41acf7bb4697abb4c93b135f8f7127af, type: 3}
       propertyPath: m_LocalPosition.y
