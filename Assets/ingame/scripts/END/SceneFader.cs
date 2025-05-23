@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -25,7 +25,7 @@ public class SceneFader : MonoBehaviour
             yield return null;
         }
 
-        SetAlpha(1f); // S'assure que c'est complètement noir
+        SetAlpha(1f); // S'assure que c'est complï¿½tement noir
         SceneManager.LoadScene(sceneName);
     }
 

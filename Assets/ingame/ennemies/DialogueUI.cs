@@ -96,7 +96,7 @@ public class DialogueUI : MonoBehaviour
         isTyping = false;
     }
 
-    void EndDialogue()
+   public void EndDialogue()
     {
         dialogueBox.SetActive(false);
         isDialogueOpen = false;
